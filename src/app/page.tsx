@@ -73,7 +73,7 @@ export default function Home() {
     return (
       <div className="mt-6 p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-4 text-black">Response:</h2>
-        <div className="bg-white p-4 rounded-md">
+        <div className="bg-white p-4 rounded-md text-black">
           {Object.entries(filteredResponse).map(([key, value]) => (
             <div key={key} className="mb-2">
               <strong className="text-black">{key}:</strong> {Array.isArray(value) ? value.join(', ') : value}
